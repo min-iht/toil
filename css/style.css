@@ -1,0 +1,1231 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GowoonDodum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@import url('//fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+
+/* 폰트 끝 */
+
+#wrap_wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'GounBatang';
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.1em;
+    opacity: 0;
+    animation: pageFadeIn 0.4s ease forwards;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ★★★탑 버튼 시작★★★ */
+.top_button {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    color: #777;
+}
+
+.top_button img {
+    opacity: 0.9;
+}
+/* ☆☆☆탑 버튼 끝☆☆☆ */
+
+/* 비디오 배경 */
+.main video {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.main {
+    display: block;
+    overflow: hidden;
+    height: 950px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+/* 배너 콘텐츠 시작----- */
+
+#header {
+    width: 1320px;
+    height: 140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    /* 서브메뉴의 기준 */
+}
+
+.header_relative {
+    position: relative;
+    z-index: 99;
+    /* 로고/아이콘의 기준 */
+}
+
+/* 로고 시작 */
+.logo_symbol {
+    width: 70px;
+    position: absolute;
+    top: 42px;
+    left: 626px;
+    transition: all 0.5s;
+}
+
+.logo_eng {
+    width: 60px;
+    position: absolute;
+    top: 127px;
+    left: 630px;
+    transition: all 0.5s;
+}
+
+.logo_eng:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* 로고 끝 */
+/* 가입 박스 시작 */
+.join {
+    position: absolute;
+    width: 30px;
+    top: 65px;
+    right: 0;
+    z-index: 99;
+}
+
+.join_box {
+    width: 220px;
+    height: 85px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    z-index: 99;
+    background-color: #D9D9D97e;
+    border-radius: 27px 0 27px 27px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-family: "suit";
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.join_button {
+    display: inline-block;
+    padding: 7px 65px 5px;
+    border-radius: 50px;
+    margin-top: 7px;
+    background-color: #C4C4C47e;
+    font-weight: 500;
+    transition: background-color 0.6s ease, opacity 0.6s ease;
+    opacity: 0.8;
+}
+
+.join_button:hover {
+    background-color: #ffffff8e;
+    opacity: 1;
+}
+
+.close_icon {
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* gnb---------- */
+.gnb {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.gnb>li>a {
+    display: block;
+    font-family: 'Suit';
+    font-weight: normal;
+    letter-spacing: 0.24em;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.gnb>li:nth-child(1) {
+    margin-left: 162px;
+    margin-right: 118px;
+}
+
+.gnb>li:nth-child(2) {
+    margin-right: 402px;
+}
+
+.gnb>li:nth-child(4) {
+    margin-right: 162px;
+    margin-left: 118px;
+}
+
+
+/* 밑줄효과 */
+.gnb>li>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 3px;
+    background-color: #777;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.gnb>li:hover>a::after {
+    transform: scale(1);
+}
+
+/* submenu서브메뉴---------- */
+
+.submenu_wrap {
+    width: 150px;
+    height: 140px;
+    box-sizing: border-box;
+    background-color: #ffffff8e;
+    position: absolute;
+    top: 140px;
+    left: 320px;
+    z-index: 99;
+}
+
+.submenu li {
+    transition: opacity 1s ease;
+}
+
+.submenu li a {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-family: "suit";
+    font-weight: 400;
+    letter-spacing: 0.24em;
+    position: relative;
+    transition: color 0.6s ease, opacity 0.6s ease;
+    opacity: 1;
+}
+
+.submenu li.off a {
+    color: #d9d9d9;
+}
+
+/* contents---------------- */
+#banner_wrap {
+    width: 1320px;
+    height: 950px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.contents_wrap {
+    width: 1320px;
+    height: 850px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 200px;
+    position: relative;
+}
+
+.main_word {
+    color: white;
+    text-shadow: 1px 1px 10px #0000002e;
+}
+
+.contents_wrap h1 {
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.contents_wrap h2 {
+    font-size: 32px;
+    letter-spacing: 0.12em;
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 120px;
+    text-align: center;
+}
+
+.scroll p {
+    color: #e7e7e7;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    line-height: 2.2em;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 4px #0000001e;
+    padding-left: 10px;
+}
+
+.scroll span {
+    letter-spacing: 0.6em;
+    font-weight: bold;
+}
+
+.scroll a {
+    display: block;
+    animation: scroll_ani 3s infinite;
+    transition: all 0.2s;
+}
+
+/* 스크롤 애니메이션 시작---------------- */
+@keyframes scroll_ani {
+    0% {
+        transform: translateY(0px);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: translateY(10px);
+        transition: all 0.2s;
+    }
+
+    100% {
+        transform: translateY(0px);
+        transition: all 0.2s;
+    }
+}
+
+/* 스크롤 애니메이션 끝---------------- */
+/* =========s1========== */
+
+#section1 {
+    width: 1320px;
+    height: 1614px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* title-------------------- */
+.title {
+    position: relative;
+    /* 동그라미의 기준 */
+    text-align: center;
+}
+
+.small_title {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    letter-spacing: 0.7em;
+    font-size: 16px;
+}
+
+.big_title {
+    margin: 34px 0 150px;
+    font-size: 40px;
+    letter-spacing: 0.18em;
+    -webkit-text-stroke: 0.3px #666;
+    z-index: 1;
+}
+
+.green_circle {
+    position: absolute;
+    top: 50%;
+    left: 41.5%;
+    z-index: -1;
+}
+
+/* aos contents------------------- */
+.s1_contents {
+    width: 1320px;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.img_box {
+    width: 810px;
+    height: 290px;
+}
+
+.text_box {
+    width: 430px;
+    height: 290px;
+    position: relative;
+    /* s1_text의 기준 */
+    font-size: 22px;
+    letter-spacing: 0.1em;
+}
+
+.s1_text {
+    position: absolute;
+    bottom: 0;
+}
+
+.s1_text span {
+    font-weight: bold;
+    margin-right: 76px;
+}
+
+.text_right {
+    position: absolute;
+    right: 0;
+}
+
+/* s2================================== */
+#section2 {
+    width: 1320px;
+    height: 1410px;
+    margin: 0 auto;
+    margin-top: 600px;
+    position: relative;
+    /* 동그라미의 기준 */
+}
+
+.big_title_map {
+    margin: 34px 0 50px;
+    font-size: 40px;
+    letter-spacing: 0.18em;
+    -webkit-text-stroke: 0.3px #666;
+    z-index: 1;
+}
+
+#section2 .small_text {
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    margin-bottom: 100px;
+    line-height: 1.7em;
+}
+
+.ch1 {
+    padding-right: 13px;
+}
+
+.blue_circle {
+    position: absolute;
+    top: 50px;
+    left: 464px;
+    z-index: -1;
+}
+
+/* map tap------------------------------- */
+#tap_wrap {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.tap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tap>li {
+    width: 440px;
+}
+
+.tap>li>a {
+    display: block;
+    padding: 0 0 40px;
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 0.3;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.tap>li>a>span {
+    font-size: 20px;
+}
+
+.tap>li>a:hover {
+    opacity: 1;
+    border-bottom: 3px #737373 solid;
+}
+
+/* on */
+.tap>li.on>a {
+    opacity: 1;
+    border-bottom: 3px #737373 solid;
+}
+
+.tap>li.on div {
+    width: 100%;
+    height: 950px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    border-top: solid #D8D8D8 1px;
+}
+
+/* off */
+.tap>li div {
+    height: 0;
+    overflow: hidden;
+}
+
+/* hover------------------ */
+.map_wrap {
+    position: relative;
+}
+
+.map_hover {
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 60px;
+}
+
+.blue1,
+.blue2,
+.blue3 {
+    bottom: 315px;
+    right: 90px;
+}
+
+.green1,
+.green2,
+.green3 {
+    bottom: 230px;
+    right: 65px;
+}
+
+.pink1,
+.pink2,
+.pink3 {
+    bottom: 155px;
+    right: 65px;
+}
+
+.all1,
+.all2,
+.all3 {
+    bottom: 80px;
+    right: 65px;
+}
+
+/* tap end--------------- */
+.more {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin-top: 10px;
+    transition: all 0.6s;
+    font-size: 14px;
+}
+
+.arrow {
+    transition: all 0.6s;
+    padding-bottom: 4px;
+}
+
+.more:hover .arrow {
+    transform: translateY(-10px);
+    transition: all 0.6s;
+}
+
+/* sub_banner1=========================== */
+#sub_banner1 {
+    text-align: center;
+    height: 330px;
+    margin: 280px 0 305px;
+    background: url(../img/main_sub_banner1.png) repeat-y center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_text {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.18em;
+    /* animation: banner_text_ani 3s infinite; */
+}
+
+/* 배너텍스트 애니메이션 시작 */
+@keyframes banner_text_ani {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* 배너텍스트 애니메이션 끝 */
+
+.white {
+    color: white;
+}
+
+
+/* s3=================================== */
+#section3 {
+    width: 1320px;
+    height: 1106px;
+    margin: 0 auto;
+}
+
+#section3 .green_circle {
+    position: absolute;
+    left: 435px;
+}
+
+/* 제품 타이틀 시작 */
+.big_title_product {
+    margin: 34px 0 130px;
+    font-size: 40px;
+    letter-spacing: 0.18em;
+    -webkit-text-stroke: 0.3px #666;
+    z-index: 1;
+}
+
+/* 제품 타이틀 끝 */
+.product_tap_wrap {
+    width: 1320px;
+    height: 900px;
+    margin: 0 auto;
+    padding: 50px 48px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* product_view의 기준 */
+}
+
+/* list---------------- */
+.product_tap {
+    margin-top: 10px;
+}
+
+.product_tap>li {
+    display: flex;
+    width: 1224px;
+    margin-bottom: 84px;
+}
+
+.product_tap>li>a {
+    display: block;
+    opacity: 0.5;
+    -webkit-text-stroke: 0.3px #666;
+}
+
+.product_tap>li>a:hover {
+    opacity: 1;
+}
+
+/* 글자 */
+.list_title {
+    font-size: 32px;
+    margin-bottom: 19px;
+    letter-spacing: 0.12em;
+    /* -webkit-text-stroke: 0.5px #666; */
+}
+
+.list_small_title {
+    font-size: 16px;
+    letter-spacing: 0.07em;
+}
+
+/* on */
+.product_tap>li {
+    transition: opactiy 1s ease;
+}
+
+.product_tap>li>a {
+    transition: opacity 0.6s ease;
+}
+
+.product_tap>li.product_on>a {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.product_tap>li.product_on .product_sub {
+    /* li중에 on이 적용된 div */
+    width: 600px;
+    height: 888px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* off */
+.product_tap>li .product_sub {
+    height: 0;
+    overflow: hidden;
+}
+
+/* 상품 이미지 호버 효과 */
+.product_img {
+    width: 600px;
+    height: 450px;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.product_img img {
+    transition: all 1s;
+}
+
+.product_img:hover img {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.product_img:hover {
+    border-radius: 50px;
+    transition: all 1s;
+}
+
+/* 글자--------------- */
+.bold {
+    font-weight: bold;
+}
+
+.product_title {
+    font-size: 34px;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+    margin: 84px 0 10px;
+}
+
+.product_small_title {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+}
+
+#section3 .more {
+    margin-right: 48px;
+}
+
+.pink_circle {
+    width: 48px;
+    height: 48px;
+}
+
+#section3 .pink_circle {
+    position: absolute;
+    bottom: -5px;
+    right: 132px;
+}
+
+/* sub_banner2======================= */
+#sub_banner2 {
+    height: 250px;
+    margin: 260px 0 260px auto;
+    background: url(../img/main_sub_banner2.png) repeat-y center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub_banner2 .banner_text {
+    font-weight: normal;
+    -webkit-text-stroke: 0.1px #666;
+}
+
+
+/* s4================================== */
+#section4 {
+    width: 1320px;
+    height: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    /* 동그라미의 기준 */
+    margin-bottom: 200px;
+}
+
+#section4 .blue_circle {
+    position: absolute;
+    left: 342px;
+}
+
+.journal_wrap {
+    width: 1320px;
+    height: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.big_box {
+    width: 650px;
+    height: 440px;
+    position: relative;
+    /* 타이틀박스의 기준 */
+    overflow: hidden;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+.small_box {
+    margin-top: 20px;
+    width: 425px;
+    height: 420px;
+    position: relative;
+    /* 타이틀박스의 기준 */
+    overflow: hidden;
+    transition: all 1s;
+    box-sizing: border-box;
+}
+
+#section4 .pink_circle {
+    position: absolute;
+    bottom: -2px;
+    right: 52px;
+}
+
+/* 호버 효과 */
+.big_box img {
+    transition: all 1s;
+}
+
+.small_box img {
+    transition: all 1s;
+}
+
+.big_box:hover img,
+.small_box:hover img {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+/* 저널 타이틀 시작 */
+/* 포지션 */
+.title_box1 {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.title_box2 {
+    position: absolute;
+    bottom: 35px;
+    right: 40px;
+    text-align: right;
+}
+
+.title_box3 {
+    position: absolute;
+    bottom: 60px;
+    left: 86px;
+}
+
+.title_box4 {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -95px;
+    text-align: center;
+}
+
+.title_box5 {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    text-align: right;
+}
+
+/* 글자 꾸미기 */
+.journal_big_title {
+    font-size: 22px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.journal_small_title {
+    font-size: 11px;
+    letter-spacing: 0;
+    color: white;
+}
+
+
+/* 저널 타이틀 끝 */
+/* footer================================ */
+#footer_wrap {
+    background-color: #fdfdfd;
+    border-top: 0.1px solid #d9d9d9;
+}
+
+#footer {
+    width: 1320px;
+    height: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 96px;
+    position: relative;
+    /* 글자꾸미기 */
+    font-family: 'pretendard';
+    letter-spacing: 0.05em;
+    color: #777;
+}
+
+#footer h1 .footer_symbol {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    transition: all 0.5s;
+}
+
+/* 로고 애니메이션 */
+.footer_symbol:hover,
+.logo_symbol:hover {
+    animation: logo_ani 5s infinite;
+}
+
+@keyframes logo_ani {
+    0% {
+        transform: rotate(0deg);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+}
+
+.footer_logo_eng {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    transition: all 0.5s;
+}
+
+.footer_logo_eng:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+/* link--------------- */
+#footer_menu_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 210px;
+}
+
+/* 푸터메뉴 */
+.footer_ul {
+    display: flex;
+}
+
+.footer_menu,
+.footer_customer {
+    margin-right: 180px;
+}
+
+.footer_ul>li>ul>li:nth-child(1) {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer_ul>li>ul>li>a {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+/* 푸터링크 */
+.footer_link {
+    display: flex;
+}
+
+.footer_link li a {
+    display: block;
+    font-size: 9px;
+    margin-right: 44px;
+}
+
+.footer_link li a:hover {
+    color: #333;
+}
+
+.hover li a {
+    transition: all 0.4s;
+}
+
+.hover li a:hover {
+    transform: translateX(10px);
+    transition: all 0.3s;
+    color: #333;
+}
+
+/* SNS 아이콘 */
+#footer_under_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon li {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    transition: all 0.4s;
+}
+
+.icon li img {
+    width: 100%;
+}
+
+.icon li:nth-child(1) img {
+    width: 60%;
+}
+
+.icon li:nth-child(2) img {
+    padding-top: 1px;
+}
+
+.icon li:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s;
+}
+
+
+/* 커서===================== */
+/* 기본 마우스 커서 숨기기 (모든 클릭 요소 포함) */
+body,
+a,
+button,
+[role="button"],
+.entire-view-btn,
+graphic-node {
+    cursor: none !important;
+}
+
+/* 1. 중앙의 작은 점 */
+.toil-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #333333;
+    /* 토일의 기본 묵직한 텍스트 컬러 */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* 커서가 클릭을 방해하지 않도록 설정 */
+    z-index: 10000;
+    opacity: 1;
+    transition: width 0.2s, height 0.2s, background-color 0.2s, opacity 0.2s;
+}
+
+/* 2. 외곽의 부드러운 링 (포커스 링) */
+.toil-cursor-follower {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(51, 51, 51, 0.25);
+    /* 가느다란 실선 느낌 */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 1;
+    /* 수고로운 느낌을 덜어줄 부드러운 감속 트래킹 프로퍼티 */
+    transition:
+        left 0.08s ease-out,
+        top 0.08s ease-out,
+        width 0.3s ease-out,
+        height 0.3s ease-out,
+        border-color 0.3s,
+        background-color 0.3s,
+        opacity 0.2s;
+}
+
+/* ===================================================
+   HOVER STATE: 버튼, 링크, 지도 섬 노드에 호버했을 때
+   =================================================== */
+
+/* 중앙 점은 작아지면서 맑은 파란색으로 변조 */
+.toil-cursor-dot.is-hover {
+    width: 4px;
+    height: 4px;
+    background-color: #CFEFFFd8;
+}
+
+/* 외곽 링은 크기가 커지며 브랜드 컬러 칠과 선으로 확장 */
+.toil-cursor-follower.is-hover {
+    width: 80px;
+    height: 80px;
+    border-color: #cfefffd8;
+    background-color: rgba(176, 225, 250, 0.12);
+    /* 은은한 파란색 번짐 효과 */
+}
+
+
+/* 커서 사라지기====================== */
+
+/* ===================================================
+   HIDDEN STATE: 특정 구역 호버 시 커서 완전 증발 효과
+   =================================================== */
+
+/* 중심 점과 외곽 팔로워 효과를 동시에 완전히 지웁니다 */
+.toil-cursor-dot.is-hidden,
+.toil-cursor-follower.is-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    /* 기존 box-shadow나 오버레이 잔상까지 강제로 투명화 */
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    /* 스르륵 사라지는 부드러운 타임 인터벌 */
+    transition: all 0.3s ease-out !important;
+}

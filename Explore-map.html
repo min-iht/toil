@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>TOIL 토일</title>
+    <link rel="stylesheet" href="./css/style2-1.css">
+    <!-- 내가 꾸민 CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- 구글폰트 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+    <!-- 파비콘 -->
+</head>
+
+<body>
+    <div id="wrap_wrap">
+        <!-- top s -->
+        <div class="top_button">
+            <a href="#wrap_wrap">
+                <img src="./img/button_top.png" alt="top">
+                <p>TOP</p>
+            </a>
+        </div>
+        <!-- top e /main s -->
+        <div class=" main">
+            <!-- 높이950/전체너비/배경 -->
+            <div class="main_relative">
+                <img src="./img/map_main.png" alt="main">
+            </div>
+            <div id="banner_wrap">
+                <!-- 헤더와 컨텐츠를 감싸는 가운데 상자 -->
+                <div id="header">
+                    <!-- 로고/gnb -->
+                    <!-- h150 -->
+                    <div class="header_relative hide-cursor-zone">
+                        <!-- 로고/조인아이콘 -->
+                        <h1><a href="./index.html"><img src="./img/logo_symbol.png" alt="logo" class="logo_symbol"></a>
+                        </h1>
+                        <h1><a href="./index.html"><img src="./img/logo_eng.png" alt="logo" class="logo_eng"></a></h1>
+                        <!-- 로고 w68 -->
+                    </div>
+                    <h2><a href="./Mypage.html"><img src="./img/join_icon.png" alt="join" class="join"></a>
+                    </h2>
+                    <!-- 조인아이콘 w30 -->
+                    <div class="join_box">
+                        <!-- 조인박스 220*80 -->
+                        <p>Are you a Free Islander?</p>
+                        <a href="./Mypage.html" class="join_button">JOIN</a>
+                        <a href="javascript:return false;"><img src="./img/close_icon.png" alt="close"
+                                class="close_icon"></a>
+                    </div>
+                    <!-- gnb 시작 -->
+                    <ul class="gnb">
+                        <li>
+                            <a href="./About.html">About</a>
+                        </li>
+                        <li><a href="./Explore-map.html">Explore</a>
+                            <!-- sub -->
+                            <div class="submenu_wrap">
+                                <ul class="submenu">
+                                    <li><a href="./Explore-map.html">Map</a></li>
+                                    <li><a href="./Explore-product.html">Product</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./Journal.html">Journal</a>
+                        </li>
+                        <li>
+                            <a href="./Myisland.html">My islands</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 헤더 끝 배너 시작 -->
+                <div id="banner">
+                    <!-- 가운데상자/컨텐츠 -->
+                    <!-- 1320*800/auto/tac -->
+                    <h2 data-aos="fade-up" data-aos-duration="1500">나만의 항로를 펼칠 시간</h2>
+                    <h3 data-aos="fade-up" data-aos-duration="1500">취향의 좌표를 따라 떠나는 대한민국 섬 탐험</h3>
+                    <div class="scroll">
+                        <a href="#section1"><img src="./img/scroll_white.png" alt="scroll"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main e / contents s -->
+        <div class="contents_bg">
+            <!-- 전체배경/h2460/안쪽 여백 -->
+            <div class="route_wrap">
+                <!-- 컨텐츠를 감싸는 상자/1320*1702 -->
+                <ul class="title_wrap">
+                    <!-- 1320*340/타이틀을 감싸는 한 줄 -->
+                    <!-- ★항로지도 -->
+                    <li class="on_map on_title">
+                        <a href="#" class="title">
+                            <div class="title_box1 box">
+                                <!-- 330*340/타이틀이 들어가는 한칸 -->
+                                <p>항로 지도</p>
+                            </div>
+                            <div class="title_box2 box">
+                                <!-- 330*340/설명이 들어가는 한칸 -->
+                                <p>항로 위에서 발견하는 <span>고요,
+                                        <br>나만의 섬</span>을 찾는 시간
+                                </p>
+                            </div>
+                        </a>
+                        <!-- 서브 -->
+                        <!-- ★항로지도 시작★ -->
+                        <div class="map">
+                            <div class="route_tap_wrap">
+                                <ul class="tap">
+                                    <li class="on">
+                                        <a href="javascript:void(0)" class="port">통영<span>항 여객선터미널</span></a>
+                                        <!-- 콘텐츠(서브) -->
+                                        <div class="map_wrap">
+                                            <img src="./img/통영_off.jpg" alt="map" class="map1">
+                                            <ul>
+                                                <li><a href="javascript:return false;" class="map_hover blue1"></a></li>
+                                                <li><a href="javascript:return false;" class="map_hover green1"></a>
+                                                </li>
+                                                <li><a href="javascript:return false;" class="map_hover pink1"></a></li>
+                                                <li><a href="javascript:return false;" class="map_hover all1"></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="port">여수<span> 여객선터미널</span></a>
+                                        <div class="map_wrap">
+                                            <img src="./img/여수_off.jpg" alt="map" class="map2">
+                                            <ul>
+                                                <li><a href="javascript:return false;" class="map_hover blue2"></a></li>
+                                                <li><a href="javascript:return false;" class="map_hover green2"></a>
+                                                </li>
+                                                <li><a href="javascript:return false;" class="map_hover pink2"></a></li>
+                                                <li><a href="javascript:return false;" class="map_hover all2"></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="port">인천<span>항 여객선터미널</span></a>
+                                        <div class="map_wrap">
+                                            <img src="./img/인천_off.jpg" alt="map" class="map3">
+                                            <ul>
+                                                <li><a href="javascript:return false;" class="map_hover blue3"></a></li>
+                                                <li><a href="javascript:return false;" class="map_hover green3"></a>
+                                                </li>
+                                                <li><a href="javascript:return false;" class="map_hover pink3"></a></li>
+                                                <li><a href="javascript:return false;" class="map_hover all3"></a></li>
+                                            </ul>
+                                        </div>
+                            </div>
+                            <div class="more_position">
+                                <div class="more_relative">
+                                    <a href="./Explore-product.html" class="more">
+                                        여행 준비하러 가기
+                                        <img src="./img/→.png" alt="arrow" class="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 항로지도 끝 -->
+                    </li>
+                    <!-- ★감각지도 -->
+                    <li>
+                        <a href="#" class="title">
+                            <div class="title_box3 box">
+                                <p>감각 지도</p>
+                            </div>
+                            <div class="title_box4 box">
+                                <p><span>섬의 소리</span>를 듣고
+                                    <br>마음에 닿는 곳을 간직하며
+                                    <br><span>나만의 이야기</span>를 발견하는 시간
+                                </p>
+                            </div>
+                        </a>
+                        <!-- 서브 -->
+                        <!-- ★감각지도 시작★ -->
+                        <div class="map list_map_wrap">
+                            <!-- 목록을 감싸는 가운데상자 -->
+                            <ul class="list_map">
+                                <!-- 1 -->
+                                <li>
+                                    <p class="name stroke">1　한산도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/1한산도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 2 -->
+                                <li>
+                                    <p class="name stroke">2　연화도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/2연화도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 3 -->
+                                <li>
+                                    <p class="name stroke">3　욕지도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/3욕지도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 4 -->
+                                <li>
+                                    <p class="name stroke">4　용초도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/4용초도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 5 -->
+                                <li>
+                                    <p class="name stroke">5　우도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/5우도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 6 -->
+                                <li>
+                                    <p class="name stroke">6　비진도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/6비진도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 7 -->
+                                <li>
+                                    <p class="name stroke">7　추도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/7추도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 8 -->
+                                <li>
+                                    <p class="name stroke">8　연대도·만지도</p>
+                                    <p class="departure">통영 달아항發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/8연대도만지도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 9 -->
+                                <li>
+                                    <p class="name stroke">9　사량도</p>
+                                    <p class="departure">통영 가오지항發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/9사량도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 10 -->
+                                <li>
+                                    <p class="name stroke">10　노대도</p>
+                                    <p class="departure">욕지도·두미도發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/10노대도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 11 -->
+                                <li>
+                                    <p class="name stroke">11　두미도</p>
+                                    <p class="departure">통영항 여객선터미널發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/11두미도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                                <!-- 12 -->
+                                <li>
+                                    <p class="name stroke">12　소매물도</p>
+                                    <p class="departure">비진도發</p>
+                                    <a href="javascript:return false;" class="island_btn">
+                                        <img src="./img/12소매물도.png" alt="island" class="island">
+                                    </a>
+                                    <a href="javascript:return false;" class="sound_btn">
+                                        <p>듣기</p>
+                                        <img src="./img/icon_sound_off.png" alt="sound" class="sound">
+                                    </a>
+                                    <a href="javascript:return false;" class="heart_btn">
+                                        <p>저장<br>하기</p>
+                                        <img src="./img/icon_heart_off.png" alt="heart" class="heart">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="last_wrap">
+                                <!-- 1320*340/가운데 -->
+                                <div class="last island_list">
+                                    <p class="stroke last_title"><span>Island</span>
+                                        <br>섬 목록
+                                    </p>
+                                    <p class="stroke last_depart">통영發</p>
+                                    <p class="list1">
+                                        1　한산도
+                                        <br>2　연화도
+                                        <br>3　욕지도
+                                        <br>4　용초도
+                                        <br>5　우도
+                                    </p>
+                                    <p class="list2">
+                                        6　비진도
+                                        <br>7　추도
+                                        <br>8　연대도·만지도
+                                        <br>9　사량도
+                                        <br>10　상노대도·하노대도
+                                        <br>11　두미도
+                                        <br>12　소매물도
+                                    </p>
+                                </div>
+                                <div class="last"></div>
+                                <a href="./Explore-product.html">
+                                    <div class="btn1 stroke">
+                                        <p>여행 준비하러 가기</p>
+                                    </div>
+                                </a>
+                                <a href="./Myisland.html">
+                                    <div class="btn2 stroke">
+                                        <p>내가 저장한 섬 보러 가기</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ☆감각지도 끝☆ -->
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- contents e / footer s -->
+        <div id="footer_wrap">
+            <!-- 전체너비/배경/윗테두리 -->
+            <div id="footer">
+                <!-- 1320*550 -->
+                <h1 class="hide-cursor-zone"><a href="./index.html"><img src="./img/logo_symbol.png" alt="logo"
+                            class="footer_symbol"><img src="./img/logo_eng.png" alt="logo" class="footer_logo_eng"></a>
+                </h1>
+                <!-- 푸터메뉴 -->
+                <div id="footer_menu_wrap">
+                    <ul class="footer_ul">
+                        <li>
+                            <ul class="footer_menu hover">
+                                <li>Menu</li>
+                                <li><a href="./About.html">About</a></li>
+                                <li><a href="./Explore-map.html">Explore</a></li>
+                                <li><a href="./Journal.html">Journal</a></li>
+                                <li><a href="./Myisland.html">My islands</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="footer_islands hover">
+                                <li>Islands</li>
+                                <li><a href="./Explore-map.html">Route map</a></li>
+                                <li><a href="./Explore-map.html">Sense map</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li>
+                            <ul class="footer_customer hover">
+                                <li>Customer</li>
+                                <li><a href="./Mypage.html">Order</a></li>
+                                <li><a href="./Mypage.html">Shipping</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="footer_contact hover">
+                                <li>Contact</li>
+                                <li><a href="./Mypage.html">E-mail</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 푸터링크 -->
+                <div id="footer_under_wrap">
+                    <ul class="footer_link">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#"> Copyright © 2026 토일. All rights reserved.</a></li>
+                    </ul>
+                    <!-- sns아이콘 -->
+
+                    <ul class="icon">
+                        <li><a href="#"><img src="./img/icon_footer1.png" alt="SNS"></a></li>
+                        <li><a href="#"><img src="./img/icon_footer2.png" alt="SNS"></a></li>
+                        <li><a href="#"><img src="./img/icon_footer3.png" alt="SNS"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer e -->
+    </div>
+
+    <!-- 커서 -->
+    <div class="toil-cursor-dot toil-cursor-dot.is-hidden"></div>
+    <div class="toil-cursor-follower toil-cursor-follower.is-hidden"></div>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <!-- CDN 제이쿼리 -->
+    <script src="./js/script2-1.js"></script>
+    <!-- 내가 꾸민 제이쿼리 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS 제이쿼리 -->
+</body>
+
+</html>

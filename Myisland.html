@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>TOIL 토일</title>
+    <link rel="stylesheet" href="./css/style4.css">
+    <!-- 내가 꾸민 CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- 구글폰트 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+    <!-- 파비콘 -->
+</head>
+
+<body>
+    <div id="wrap_wrap">
+        <!-- top s -->
+        <div class="top_button">
+            <a href="#wrap_wrap">
+                <img src="./img/button_top.png" alt="top">
+                <p>TOP</p>
+            </a>
+        </div>
+        <!-- top e / main s -->
+        <div class="main">
+            <!-- 헤더와 컨텐츠를 감싸는 가운데 상자 -->
+            <div id="header">
+                <!-- 로고/gnb -->
+                <!-- h150 -->
+                <div class="header_relative hide-cursor-zone">
+                    <!-- 로고/조인아이콘 -->
+                    <h1><a href="./index.html"><img src="./img/logo_symbol.png" alt="logo" class="logo_symbol"></a>
+                    </h1>
+                    <h1><a href="./index.html"><img src="./img/logo_eng.png" alt="logo" class="logo_eng"></a></h1>
+                    <!-- 로고 w68 -->
+                </div>
+                <h2><a href="./Mypage.html"><img src="./img/join_icon.png" alt="join" class="join"></a></h2>
+                <!-- 조인아이콘 w30 -->
+                <div class="join_box">
+                    <!-- 조인박스 220*80 -->
+                    <p>Are you a Free Islander?</p>
+                    <a href="./Mypage.html" class="join_button">JOIN</a>
+                    <a href="#"><img src="./img/close_icon.png" alt="close" class="close_icon"></a>
+                </div>
+                <!-- gnb 시작 -->
+                <ul class="gnb">
+                    <li>
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li><a href="./Explore-map.html">Explore</a>
+                        <!-- sub -->
+                        <div class="submenu_wrap">
+                            <ul class="submenu">
+                                <li><a href="./Explore-map.html">Map</a></li>
+                                <li><a href="./Explore-product.html">Product</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./Journal.html">Journal</a>
+                    </li>
+                    <li>
+                        <a href="./Myisland.html">My islands</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 헤더 끝 배너 시작 -->
+        <div class="banner">
+            <!-- 가운데상자/컨텐츠 -->
+            <!-- 1320*570/auto -->
+            <a href="#myi_wrap">
+                <div class="bn_left">
+                    <!-- 660*570 -->
+                    <img src="./img/myi_left_on.png" alt="my island">
+                    <div class="title_left">
+                        <p class="title32">나의 섬</p>
+                        <p class="eng_ls30">My islands</p>
+                        <p class="up_left">내가 발견하고 선택한 섬</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#log_wrap">
+                <div class="bn_right">
+                    <img src="./img/myi_right_on.png" alt="log">
+                    <div class="title_right">
+                        <p class="title32">항해 일지</p>
+                        <p class="eng_ls30">My voyage log</p>
+                        <p class="up_right">나만의 리듬으로 채워나가는 사적인 기록</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- 배너 끝 저장 시작 -->
+        <div id="myi_wrap">
+            <!-- 위아래여백 가운데상자 -->
+            <div class="myisland">
+                <!-- 1320*570/bg -->
+                <div class="text">
+                    <p class="title32">내가 저장한 섬</p>
+                    <p class="eng_ls30">My islands</p>
+                    <p>내 마음에 들어온 섬들을 살펴보세요.</p>
+                </div>
+                <div class="slide">
+                    <!-- 1 -->
+                    <div class="slide_inner slide_pad">
+                        <ul class="slide1">
+                            <li>
+                                <a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>연대도·만지도</span>
+                                            <br>통영 달아항發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>비진도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="slide1">
+                            <li>
+                                <a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>연대도·만지도</span>
+                                            <br>통영 달아항發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>비진도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 2 -->
+                    <div class="slide_inner">
+                        <ul class="slide2">
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>용초도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>한산도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="slide2">
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>용초도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>한산도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 3 -->
+                    <div class="slide_inner slide_pad">
+                        <ul class="slide3">
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>연화도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>소매물도</span>
+                                            <br>비진도 發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="slide3">
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>연화도</span>
+                                            <br>통영항 여객선터미널發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="javascript:return false;">
+                                    <div class="cover">
+                                        <img src="./img/myi_island_cover.png" alt="cover">
+                                    </div>
+                                    <div class="name">
+                                        <h4>
+                                            <span>소매물도</span>
+                                            <br>비진도 發
+                                        </h4>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./img/icon_heart_on.png" alt="heart">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 저장 끝 일지 시작 -->
+        <div id="log_wrap">
+            <!-- 가운데상자 -->
+            <!-- 항해일지 타이틀 -->
+            <p class="title32">나의 항해 일지</p>
+            <p class="eng_ls30">My voyage log</p>
+            <!-- 기록하기 버튼 -->
+            <a href="javascript:return false;">
+                <div class="write_button">
+                    <p class="write">기록하기</p>
+                    <img src="./img/myi_button_write.png" alt="write">
+                </div>
+            </a>
+            <!-- 기록하기 버튼 끝 -->
+            <div class="log">
+                <ul>
+                    <li class="turn">
+                        <a href="#" class="title_hover">
+                            <div class="title">
+                                <div class="title_in">
+                                    <p class="log_island">비진도</p>
+                                    <p class="log_date">2026 . 07 . 19 ~ 2026 . 07 . 21</p>
+                                    <p class="log_title">매일 수영하는 아침</p>
+                                </div>
+                                <div class="plus"><img src="./img/myi_arrow.png" alt="arrow"></div>
+                            </div>
+                            <div class="text_info">
+                                <div class="info_wrap">
+                                    <div>
+                                        <p>올 여름, 작고 활기찬 섬을 찾아 통영으로 떠났다. 그 첫 번째 섬이 비진도였다. 작은 아령처럼 생긴 이 귀여운 섬은 홀쭉한 해변으로
+                                            유명하다.
+                                            양쪽으로
+                                            펼쳐지는 해변을 볼 수 있는 한국의 유일한 섬일지도 모른다. <br>
+
+                                            <br>작은 섬에서는 하루가 단순하게 흘러간다. 아침에 일어나 간단하게 차려 먹고 나갈 채비를 한다. 우선 수영복 위에 평상복을 걸친다.
+                                            전날
+                                            널어둔
+                                            비치타올을 예쁘게 개켜 가방에 넣는다. 수경도 빼놓을 수 없다. 그런 다음 민박집 공용주방으로 가서 오이를 썰어 용기에 넣는다. 그날의
+                                            간식이다.
+                                            마지막으로
+                                            작은 물병에 물을 담으면 끝. <br>
+
+                                            <br>여름 해변은 아침에 가장 한적하다. 부지런한 사람들이 느긋하게 자연을 누리는 모습도 볼 수 있다. 해맑게 웃는 아이들부터 은근슬쩍
+                                            미소
+                                            짓는
+                                            어른들까지. 나는 그 사이에 비치타올을 펼쳐 자리를 잡는다. 그런 다음 수영복 위에 걸쳤던 옷을 벗고 수경을 장착, 준비 운동을 마친 후
+                                            입수!
+                                            수면
+                                            위로
+                                            올라와 숨을 뱉는다. 푸하아-. 하루가 시작되는 소리다.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img src="./img/log_img1.png" alt="log">
+                                        <a href="javascript:return false;" class="edit">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in">
+                                <p class="log_island">증도</p>
+                                <p class="log_date">2026 . 09 . 01 ~ 2026 . 09 . 02</p>
+                                <p class="log_title">염전에서 들리는 라디오 소리</p>
+                            </div>
+                            <div class="plus"><img src="./img/myi_arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                            <div class="info_wrap">
+                                <div>
+                                    <p>
+                                        증도는 전라남도 신안군에 위치한 섬이다. 부산에서 나고 자란 나에게 신안은 매우 낯선 이름이었다. 그러다 한 지인을 통해 신안의 어느 작은 섬
+                                        증도에 대해 알게 되었다.
+                                        <br>
+                                        <br>그는 어느 방송국의 라디오 PD였다. 나는 라디오 PD가 정확히 무슨 일을 하는지, 그는 어쩌다 그 일을 하게 되었는지 물었다. 대학에서
+                                        신문방송학을 전공했던 그는 졸업을 앞두고 담당교수에게 라디오 PD가 되고 싶다고 했다가 순진하다는 말을 듣고 실의에 빠졌었다고 한다. 자리가 잘
+                                        나지 않는다고. 그때 여행을 떠난 곳이 신안의 증도였다. 그는 그곳에 머무는 닷새 동안 섬 전체를 한 바퀴 돌기로 했다. 그러다 마지막 날
+                                        염전을 산책하면서 어떤 순간이 펼쳐졌다. 일꾼들이 염전의 소금을 긁는 소리만 들리는 그곳에서 익숙한 듯 이질적인 소리가 들려왔다. 염전에
+                                        가까워질수록 선명해지던 그 소리는 일꾼이 틀어둔 라디오 소리였다. 순간 그는 저 사람만 내 라디오를 들어준다면 기꺼이 라디오 PD가 되어 저
+                                        사람만을 위한 방송을 만들겠다고 다짐했다고 한다. 그뒤로 거짓말처럼 공고가 났고 무사히 라디오 PD가 되어 지금까지도 그 자리를 지키고 있다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="./img/log_img2.png" alt="log">
+                                    <a href="javascript:return false;" class="edit">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in">
+                                <p class="log_island">굴업도</p>
+                                <p class="log_date">2026 . 10 . 15 ~ 2026 . 10 . 17</p>
+                                <p class="log_title">꿈에 그리던 섬에서 생긴 일</p>
+                            </div>
+                            <div class="plus"><img src="./img/myi_arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                            <div class="info_wrap">
+                                <div>
+                                    <p>올 여름, 작고 활기찬 섬을 찾아 통영으로 떠났다. 그 첫 번째 섬이 비진도였다. 작은 아령처럼 생긴 이 귀여운 섬은 홀쭉한 해변으로 유명하다.
+                                        양쪽으로
+                                        펼쳐지는 해변을 볼 수 있는 한국의 유일한 섬일지도 모른다. <br>
+
+                                        <br>작은 섬에서는 하루가 단순하게 흘러간다. 아침에 일어나 간단하게 차려 먹고 나갈 채비를 한다. 우선 수영복 위에 평상복을 걸친다. 전날
+                                        널어둔
+                                        비치타올을 예쁘게 개켜 가방에 넣는다. 수경도 빼놓을 수 없다. 그런 다음 민박집 공용주방으로 가서 오이를 썰어 용기에 넣는다. 그날의
+                                        간식이다.
+                                        마지막으로
+                                        작은 물병에 물을 담으면 끝. <br>
+
+                                        <br>여름 해변은 아침에 가장 한적하다. 부지런한 사람들이 느긋하게 자연을 누리는 모습도 볼 수 있다. 해맑게 웃는 아이들부터 은근슬쩍 미소
+                                        짓는
+                                        어른들까지. 나는 그 사이에 비치타올을 펼쳐 자리를 잡는다. 그런 다음 수영복 위에 걸쳤던 옷을 벗고 수경을 장착, 준비 운동을 마친 후 입수!
+                                        수면
+                                        위로
+                                        올라와 숨을 뱉는다. 푸하아-. 하루가 시작되는 소리다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="./img/log_img3.png" alt="log">
+                                    <a href="javascript:return false;" class="edit">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="title_in">
+                                <p class="log_island">우도</p>
+                                <p class="log_date">2026 . 11 . 3 ~ 2026 . 11 . 4</p>
+                                <p class="log_title">섬에서 맞이하는 가을</p>
+                            </div>
+                            <div class="plus"><img src="./img/myi_arrow.png" alt="arrow"></div>
+                        </div>
+                        <div class="text_info">
+                            <div class="info_wrap">
+                                <div>
+                                    <p>올 여름, 작고 활기찬 섬을 찾아 통영으로 떠났다. 그 첫 번째 섬이 비진도였다. 작은 아령처럼 생긴 이 귀여운 섬은 홀쭉한 해변으로 유명하다.
+                                        양쪽으로
+                                        펼쳐지는 해변을 볼 수 있는 한국의 유일한 섬일지도 모른다. <br>
+
+                                        <br>작은 섬에서는 하루가 단순하게 흘러간다. 아침에 일어나 간단하게 차려 먹고 나갈 채비를 한다. 우선 수영복 위에 평상복을 걸친다. 전날
+                                        널어둔
+                                        비치타올을 예쁘게 개켜 가방에 넣는다. 수경도 빼놓을 수 없다. 그런 다음 민박집 공용주방으로 가서 오이를 썰어 용기에 넣는다. 그날의
+                                        간식이다.
+                                        마지막으로
+                                        작은 물병에 물을 담으면 끝. <br>
+
+                                        <br>여름 해변은 아침에 가장 한적하다. 부지런한 사람들이 느긋하게 자연을 누리는 모습도 볼 수 있다. 해맑게 웃는 아이들부터 은근슬쩍 미소
+                                        짓는
+                                        어른들까지. 나는 그 사이에 비치타올을 펼쳐 자리를 잡는다. 그런 다음 수영복 위에 걸쳤던 옷을 벗고 수경을 장착, 준비 운동을 마친 후 입수!
+                                        수면
+                                        위로
+                                        올라와 숨을 뱉는다. 푸하아-. 하루가 시작되는 소리다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <img src="./img/log_img4.png" alt="log">
+                                    <a href="javascript:return false;" class="edit">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">
+                <p class="page">1　<span>2　3　4</span></p>
+            </a>
+        </div>
+        <!-- 일지 끝 푸터 시작 -->
+        <div id="footer_wrap">
+            <!-- 전체너비/배경/윗테두리 -->
+            <div id="footer">
+                <!-- 1320*550 -->
+                <h1 class="hide-cursor-zone"><a href="./index.html"><img src="./img/logo_symbol.png" alt="logo"
+                            class="footer_symbol"><img src="./img/logo_eng.png" alt="logo" class="footer_logo_eng"></a>
+                </h1>
+                <!-- 푸터메뉴 -->
+                <div id="footer_menu_wrap">
+                    <ul class="footer_ul">
+                        <li>
+                            <ul class="footer_menu hover">
+                                <li>Menu</li>
+                                <li><a href="./About.html">About</a></li>
+                                <li><a href="./Explore-map.html">Explore</a></li>
+                                <li><a href="./Journal.html">Journal</a></li>
+                                <li><a href="./Myisland.html">My islands</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="footer_islands hover">
+                                <li>Islands</li>
+                                <li><a href="./Explore-map.html">Route map</a></li>
+                                <li><a href="./Explore-map.html">Sense map</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li>
+                            <ul class="footer_customer hover">
+                                <li>Customer</li>
+                                <li><a href="./Mypage.html">Order</a></li>
+                                <li><a href="./Mypage.html">Shipping</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="footer_contact hover">
+                                <li>Contact</li>
+                                <li><a href="./Mypage.html">E-mail</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 푸터링크 -->
+                <div id="footer_under_wrap">
+                    <ul class="footer_link">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#"> Copyright © 2026 토일. All rights reserved.</a></li>
+                    </ul>
+                    <!-- sns아이콘 -->
+
+                    <ul class="icon">
+                        <li><a href="#"><img src="./img/icon_footer1.png" alt="SNS"></a></li>
+                        <li><a href="#"><img src="./img/icon_footer2.png" alt="SNS"></a></li>
+                        <li><a href="#"><img src="./img/icon_footer3.png" alt="SNS"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ☆ footer e -->
+    </div>
+
+
+
+    <!-- 커서 -->
+    <div class="toil-cursor-dot toil-cursor-dot.is-hidden"></div>
+    <div class="toil-cursor-follower toil-cursor-follower.is-hidden"></div>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <!-- CDN 제이쿼리 -->
+    <script src="./js/script4.js"></script>
+    <!-- 내가 꾸민 제이쿼리 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- AOS 제이쿼리 -->
+</body>
+
+</html>

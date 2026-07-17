@@ -1,0 +1,1162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GowoonDodum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@import url('//fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+
+/* 폰트 끝 */
+
+#wrap_wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'GounBatang';
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.05em;
+    animation: pageFadeIn 0.4s ease forwards;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ★★★탑 버튼 시작★★★ */
+.top_button {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    color: #777;
+}
+
+.top_button img {
+    opacity: 0.9;
+}
+
+/* ☆☆☆탑 버튼 끝☆☆☆ */
+/* 메인 시작 */
+
+.main {
+    width: 100%;
+    height: 950px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    /* 배너랩의 기준 */
+}
+
+.main_relative {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    /* 메인 배경의 기준 */
+}
+
+.main_relative img {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    box-shadow: 0 4px 16px #0000001e;
+}
+
+#banner_wrap {
+    width: 1320px;
+    height: 950px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+#header {
+    width: 1320px;
+    height: 140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    /* 서브메뉴의 기준 */
+}
+
+.header_relative {
+    position: relative;
+    z-index: 99;
+    /* 로고/아이콘의 기준 */
+}
+
+/* 로고 시작 */
+.logo_symbol {
+    width: 70px;
+    position: absolute;
+    top: 42px;
+    left: 626px;
+    transition: all 0.5s;
+}
+
+.logo_eng {
+    width: 60px;
+    position: absolute;
+    top: 127px;
+    left: 630px;
+    transition: all 0.5s;
+}
+
+.logo_eng:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* 로고 애니메이션 */
+.footer_symbol:hover,
+.logo_symbol:hover {
+    animation: logo_ani 5s infinite;
+}
+
+@keyframes logo_ani {
+    0% {
+        transform: rotate(0deg);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+}
+
+/* 로고 끝 */
+/* 가입 박스 시작 */
+.join {
+    position: absolute;
+    width: 30px;
+    top: 65px;
+    right: 0;
+    z-index: 99;
+}
+
+.join_box {
+    width: 220px;
+    height: 85px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    z-index: 99;
+    background-color: #d9d9d9d8;
+    border-radius: 27px 0 27px 27px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-family: "suit";
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.join_button {
+    display: inline-block;
+    padding: 7px 65px 5px;
+    border-radius: 50px;
+    margin-top: 7px;
+    background-color: #b6b6b6d7;
+    font-weight: 500;
+    transition: background-color 0.6s ease, opacity 0.6s ease;
+    opacity: 0.8;
+}
+
+.join_button:hover {
+    background-color: #ffffff8e;
+    opacity: 1;
+}
+
+.close_icon {
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* gnb---------- */
+.gnb {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.gnb>li>a {
+    display: block;
+    font-family: 'Suit';
+    font-weight: normal;
+    letter-spacing: 0.24em;
+    padding-bottom: 48px;
+    position: relative;
+}
+
+.gnb>li:nth-child(1) {
+    margin-left: 162px;
+    margin-right: 118px;
+}
+
+.gnb>li:nth-child(2) {
+    margin-right: 402px;
+}
+
+.gnb>li:nth-child(4) {
+    margin-right: 162px;
+    margin-left: 118px;
+}
+
+
+/* 밑줄효과 */
+.gnb>li>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 3px;
+    background-color: #777;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.gnb>li:hover>a::after {
+    transform: scale(1);
+}
+
+/* submenu서브메뉴---------- */
+
+.submenu_wrap {
+    width: 150px;
+    height: 140px;
+    box-sizing: border-box;
+    background-color: #ffffff8e;
+    position: absolute;
+    top: 140px;
+    left: 320px;
+    z-index: 99;
+}
+
+.submenu li {
+    transition: opacity 1s ease;
+}
+
+.submenu li a {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-family: "suit";
+    font-weight: 400;
+    letter-spacing: 0.24em;
+    transition: color 0.6s ease, opacity 0.6s ease;
+    opacity: 0.8;
+}
+
+.submenu li a:hover {
+    opacity: 1;
+}
+
+.submenu li.off a {
+    color: #d9d9d9;
+}
+
+/* 헤더 끝============= */
+/* 배너 시작=========== */
+
+#banner {
+    width: 1320px;
+    height: 810px;
+    color: white;
+    padding: 140px 0 80px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+/* 배너문구 페이드인 시작 */
+/* #banner h2,
+#banner h3 {
+    animation: banner_ani 1s;
+}
+
+@keyframes banner_ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* 배너문구 페이드인 끝 */
+#banner h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+    text-shadow: 0 1px 10px #000000;
+}
+
+#banner h3 {
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: 0 1px 10px #000000;
+}
+
+/* 스크롤 */
+.scroll {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.scroll a {
+    display: block;
+    animation: scroll_ani 3s infinite;
+    transition: all 0.2s;
+}
+
+/* 스크롤 애니메이션 시작---------------- */
+@keyframes scroll_ani {
+    0% {
+        transform: translateY(0px);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: translateY(10px);
+        transition: all 0.2s;
+    }
+
+    100% {
+        transform: translateY(0px);
+        transition: all 0.2s;
+    }
+}
+
+/* 스크롤 애니메이션 끝---------------- */
+/* ==================================================== */
+/* ===================컨텐츠 시작======================= */
+/* ==================================================== */
+
+.contents_bg {
+    background: url(../img/map_bg.jpg) no-repeat center top 0;
+    padding-top: 275px;
+    padding-bottom: 100px;
+}
+
+.route_wrap {
+    width: 1320px;
+    height: 1800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.title_wrap {
+    width: 1320px;
+    height: 339px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    /* route_tap_wrap의 기준 */
+}
+
+.title_wrap a {
+    display: flex;
+}
+
+.title_box1,
+.title_box3 {
+    width: 330px;
+    height: 338px;
+    box-sizing: border-box;
+    padding: 40px 35px 0 0;
+    text-align: right;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.title_box1 {
+    background: url(../img/circle_blue.png) no-repeat left 130px top 35px;
+}
+
+.title_box3 {
+    background: url(../img/circle_pink.png) no-repeat left 130px top 35px;
+}
+
+.title_box2,
+.title_box4 {
+    width: 330px;
+    height: 338px;
+    box-sizing: border-box;
+    padding: 46px 0 0 40px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.title .box {
+    opacity: 0.4;
+    transition: opacity 0.4s ease;
+}
+
+.title {
+    display: block;
+}
+
+.title:hover .box {
+    opacity: 1;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* ★★★★★지도 시작★★★★★ */
+.route_tap_wrap {
+    width: 1319px;
+    margin: 0 auto;
+    height: 1080px;
+    border-bottom: #d9d9d9 1px solid;
+    box-sizing: border-box;
+    position: absolute;
+    top: 339px;
+}
+
+/* ★큰 탭 시작 */
+/* off */
+.title_wrap>li .map {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* on */
+.title_wrap>li.on_map .map {
+    max-height: 3000px;
+    opacity: 1;
+}
+
+.title_wrap li.on_map .map {
+    opacity: 1;
+}
+
+.title_wrap>li.on_title div {
+    opacity: 1;
+}
+
+/* ☆큰 탭 끝 */
+
+.tap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* 지도와 more의 기준 */
+}
+
+.tap>li {
+    width: 440px;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tap>li>a {
+    display: block;
+    padding: 44px 0 45px;
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 0.3;
+    text-align: center;
+    letter-spacing: 0.1em;
+    transition: opacity 0.2s ease;
+    box-sizing: border-box;
+}
+
+.tap>li>a>span {
+    font-size: 20px;
+}
+
+.tap>li>a:hover {
+    opacity: 1;
+    border-bottom: 3px #737373 solid;
+}
+
+/* on */
+.tap>li.on>a {
+    opacity: 1;
+    border-bottom: 3px #737373 solid;
+}
+
+.tap>li.on div {
+    width: 100%;
+    height: 950px;
+    position: absolute;
+    top: 129px;
+    left: 0;
+}
+
+/* off */
+.tap>li div {
+    height: 0;
+    overflow: hidden;
+}
+
+/* hover------------------ */
+.map_wrap {
+    position: relative;
+}
+
+.map_hover {
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 60px;
+}
+
+.blue1,
+.blue2,
+.blue3 {
+    bottom: 315px;
+    right: 90px;
+}
+
+.green1,
+.green2,
+.green3 {
+    bottom: 230px;
+    right: 65px;
+}
+
+.pink1,
+.pink2,
+.pink3 {
+    bottom: 155px;
+    right: 65px;
+}
+
+.all1,
+.all2,
+.all3 {
+    bottom: 80px;
+    right: 65px;
+}
+
+/* tap end--------------- */
+.more_position {
+    position: absolute;
+    top: 1420px;
+}
+
+.more_relative {
+    width: 1320px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    /* 화살표의 기준 */
+    margin-bottom: 60px;
+}
+
+.more {
+    transition: all 0.6s;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.arrow {
+    width: 15px;
+    height: 6px;
+    transition: all 0.6s;
+    padding-bottom: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.more:hover {
+    opacity: 0.6;
+}
+
+.more:hover .arrow {
+    transform: translateY(-10px);
+    transition: all 0.6s;
+}
+
+
+/* ☆☆☆항로지도 끝☆☆☆ */
+/* ★★★★★감각지도 시작★★★★★ */
+.list_map_wrap {
+    width: 1319px;
+    margin: 0 auto;
+    font-family: 'GowoonDodum';
+    box-sizing: border-box;
+    position: absolute;
+    top: 339px;
+    left: 0;
+}
+
+.list_map {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.list_map li {
+    width: 329px;
+    height: 339px;
+    position: relative;
+    /* 목록 요소의 기준 */
+    margin-bottom: 1px;
+    transition: all 0.4s;
+}
+
+.list_map li a {
+    display: block;
+    letter-spacing: 0.1em;
+}
+
+.island {
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+/* 칸 배경 호버효과*/
+.list_map li:hover {
+    background-color: #cfefff75;
+    transition: all 0.4s;
+}
+
+.list_map li a:hover .island {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+/* 글자 */
+.stroke {
+    -webkit-text-stroke: #666 0.2px;
+}
+
+.name {
+    font-size: 18px;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    z-index: 9;
+}
+
+.departure {
+    font-size: 13px;
+    position: absolute;
+    bottom: 24px;
+    left: 22px;
+    opacity: 0.9;
+    z-index: 9;
+}
+
+.heart_btn p {
+    font-size: 12px;
+    position: absolute;
+    top: 62px;
+    right: 30px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.heart_btn:hover p {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+.heart {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 26px;
+    right: 28px;
+}
+
+.sound {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 16px;
+    right: 24px;
+    z-index: 9;
+}
+
+.sound_btn p {
+    font-size: 12px;
+    position: absolute;
+    bottom: 62px;
+    right: 32px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+
+.sound_btn:hover p {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
+
+/* ☆목록 끝☆ */
+/* ★라스트 시작★ */
+.last_wrap {
+    width: 1320px;
+    height: 340px;
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'GowoonDodum';
+    justify-content: space-between;
+}
+
+.last {
+    width: 329px;
+    height: 339px;
+    padding: 50px 0 0 50px;
+    box-sizing: border-box;
+}
+
+.island_list {
+    background: url(../img/circle_blue.png) no-repeat left 22px top 40px;
+    position: relative;
+    /* last2의 기준 */
+}
+
+.island_list span {
+    letter-spacing: 0.34em;
+}
+
+.last_title {
+    font-size: 20px;
+}
+
+.last_depart {
+    margin-top: 20px;
+}
+
+.list1,
+.list2 {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.list1 {
+    margin-top: 30px;
+}
+
+.list2 {
+    position: absolute;
+    top: 141px;
+    right: 20px;
+}
+
+.btn1,
+.btn2 {
+    height: 339px;
+    padding-left: 60px;
+    padding-top: 155px;
+    box-sizing: border-box;
+    opacity: 0.8;
+}
+
+.btn1 {
+    width: 327px;
+    padding-left: 95px;
+    transition: all 0.6s ease;
+    background-color: #DAFFD8;
+}
+
+.btn1 p,
+.btn2 p {
+    transition: all 0.6s ease;
+}
+
+.btn2 {
+    width: 329px;
+    padding-left: 75px;
+    transition: all 0.6s ease;
+    background-color: #FFE3E3;
+    margin-right: 1px;
+}
+
+.btn1:hover {
+    background-color: #daffd89e;
+}
+
+.btn2:hover {
+    background-color: #FFE3E39e;
+}
+
+.btn1:hover p {
+    opacity: 0.9;
+    transition: all 0.6s ease;
+}
+
+.btn2:hover p {
+    opacity: 0.9;
+    transition: all 0.6s ease;
+}
+
+/* ☆☆☆감각지도 끝☆☆☆ */
+/* ★푸터 시작★ */
+/* footer================================ */
+#footer_wrap {
+    background-color: #fdfdfd;
+    border-top: 0.1px solid #d9d9d9;
+}
+
+#footer {
+    width: 1320px;
+    height: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 96px;
+    position: relative;
+    /* 글자꾸미기 */
+    font-family: 'pretendard';
+    letter-spacing: 0.05em;
+    color: #777;
+}
+
+#footer h1 .footer_symbol {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    transition: all 0.5s;
+}
+
+/* 로고 애니메이션 */
+.footer_symbol:hover,
+.logo_symbol:hover {
+    animation: logo_ani 5s infinite;
+}
+
+@keyframes logo_ani {
+    0% {
+        transform: rotate(0deg);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+}
+
+.footer_logo_eng {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    transition: all 0.5s;
+}
+
+.footer_logo_eng:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+/* link--------------- */
+#footer_menu_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 210px;
+}
+
+/* 푸터메뉴 */
+.footer_ul {
+    display: flex;
+}
+
+.footer_menu,
+.footer_customer {
+    margin-right: 180px;
+}
+
+.footer_ul>li>ul>li:nth-child(1) {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer_ul>li>ul>li>a {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+/* 푸터링크 */
+.footer_link {
+    display: flex;
+}
+
+.footer_link li a {
+    display: block;
+    font-size: 9px;
+    margin-right: 44px;
+}
+
+.footer_link li a:hover {
+    color: #333;
+}
+
+.hover li a {
+    transition: all 0.4s;
+}
+
+.hover li a:hover {
+    transform: translateX(10px);
+    transition: all 0.3s;
+    color: #333;
+}
+
+/* SNS 아이콘 */
+#footer_under_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon li {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    transition: all 0.4s;
+}
+
+.icon li img {
+    width: 100%;
+}
+
+.icon li:nth-child(1) img {
+    width: 60%;
+}
+
+.icon li:nth-child(2) img {
+    padding-top: 1px;
+}
+
+.icon li:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s;
+}
+
+/* ★커서 시작★ */
+/* 커서===================== */
+/* 기본 마우스 커서 숨기기 (모든 클릭 요소 포함) */
+body,
+a,
+button,
+[role="button"],
+.entire-view-btn,
+graphic-node {
+    cursor: none !important;
+}
+
+/* 1. 중앙의 작은 점 */
+.toil-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #333333;
+    /* 토일의 기본 묵직한 텍스트 컬러 */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* 커서가 클릭을 방해하지 않도록 설정 */
+    z-index: 10000;
+    opacity: 1;
+    transition: width 0.2s, height 0.2s, background-color 0.2s, opacity 0.2s;
+}
+
+/* 2. 외곽의 부드러운 링 (포커스 링) */
+.toil-cursor-follower {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(51, 51, 51, 0.25);
+    /* 가느다란 실선 느낌 */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 1;
+    /* 수고로운 느낌을 덜어줄 부드러운 감속 트래킹 프로퍼티 */
+    transition:
+        left 0.08s ease-out,
+        top 0.08s ease-out,
+        width 0.3s ease-out,
+        height 0.3s ease-out,
+        border-color 0.3s,
+        background-color 0.3s,
+        opacity 0.2s;
+}
+
+/* ===================================================
+   HOVER STATE: 버튼, 링크, 지도 섬 노드에 호버했을 때
+   =================================================== */
+
+/* 중앙 점은 작아지면서 맑은 파란색으로 변조 */
+.toil-cursor-dot.is-hover {
+    width: 4px;
+    height: 4px;
+    background-color: #CFEFFFd8;
+}
+
+/* 외곽 링은 크기가 커지며 브랜드 컬러 칠과 선으로 확장 */
+.toil-cursor-follower.is-hover {
+    width: 80px;
+    height: 80px;
+    border-color: #cfefffd8;
+    background-color: rgba(176, 225, 250, 0.12);
+    /* 은은한 파란색 번짐 효과 */
+}
+
+
+/* 커서 사라지기====================== */
+
+/* ===================================================
+   HIDDEN STATE: 특정 구역 호버 시 커서 완전 증발 효과
+   =================================================== */
+
+/* 중심 점과 외곽 팔로워 효과를 동시에 완전히 지웁니다 */
+.toil-cursor-dot.is-hidden,
+.toil-cursor-follower.is-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    /* 기존 box-shadow나 오버레이 잔상까지 강제로 투명화 */
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    /* 스르륵 사라지는 부드러운 타임 인터벌 */
+    transition: all 0.3s ease-out !important;
+}

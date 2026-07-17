@@ -1,0 +1,658 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GounBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GowoonDodum';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@import url('//fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+
+/* 폰트 끝 */
+
+#wrap_wrap {
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'GowoonDodum';
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.05em;
+    animation: pageFadeIn 0.4s ease forwards;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ★★★탑 버튼 시작★★★ */
+.top_button {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    color: #777;
+}
+
+.top_button img {
+    opacity: 0.9;
+}
+/* ☆☆☆탑 버튼 끝☆☆☆ */
+
+/* 메인 시작================= */
+.main {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+/* 헤더 시작 */
+#header {
+    width: 1320px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+    /* 서브메뉴의 기준 */
+}
+
+.header_relative {
+    position: relative;
+    z-index: 99;
+    /* 로고/아이콘의 기준 */
+}
+
+/* 로고 시작 */
+.logo_symbol {
+    width: 70px;
+    position: absolute;
+    top: 42px;
+    left: 626px;
+    transition: all 0.5s;
+}
+
+/* 로고 애니메이션 */
+.footer_symbol:hover,
+.logo_symbol:hover {
+    animation: logo_ani 5s infinite;
+}
+
+@keyframes logo_ani {
+    0% {
+        transform: rotate(0deg);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+}
+
+.logo_eng {
+    width: 60px;
+    position: absolute;
+    top: 127px;
+    left: 630px;
+    transition: all 0.5s;
+}
+
+.logo_eng:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* 로고 끝 */
+/* 가입 박스 시작 */
+.join {
+    position: absolute;
+    width: 30px;
+    top: 65px;
+    right: 0;
+    z-index: 99;
+}
+
+.join_box {
+    width: 220px;
+    height: 85px;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    z-index: 99;
+    background-color: #D9D9D97e;
+    border-radius: 27px 0 27px 27px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-family: "suit";
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.join_button {
+    display: inline-block;
+    padding: 7px 65px 5px;
+    border-radius: 50px;
+    margin-top: 7px;
+    background-color: #C4C4C47e;
+    font-weight: 500;
+    transition: background-color 0.6s ease, opacity 0.6s ease;
+    opacity: 0.8;
+}
+
+.join_button:hover {
+    background-color: #ffffff8e;
+    opacity: 1;
+}
+
+.close_icon {
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* gnb---------- */
+.gnb {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.gnb>li>a {
+    display: block;
+    font-family: 'Suit';
+    font-weight: normal;
+    letter-spacing: 0.24em;
+    padding-bottom: 48px;
+    position: relative;
+    /* 밑줄의 기준 */
+}
+
+.gnb>li:nth-child(1) {
+    margin-left: 162px;
+    margin-right: 118px;
+}
+
+.gnb>li:nth-child(2) {
+    margin-right: 402px;
+}
+
+.gnb>li:nth-child(4) {
+    margin-right: 162px;
+    margin-left: 118px;
+}
+
+/* 밑줄효과 */
+.gnb>li>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 3px;
+    background-color: #777;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.gnb>li:hover>a::after {
+    transform: scale(1);
+}
+
+/* submenu서브메뉴---------- */
+
+.submenu_wrap {
+    width: 150px;
+    height: 140px;
+    box-sizing: border-box;
+    background-color: #eeeeee8e;
+    position: absolute;
+    top: 140px;
+    left: 320px;
+    z-index: 99;
+}
+
+.submenu li {
+    transition: opacity 1s ease;
+}
+
+.submenu li a {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    font-family: "suit";
+    letter-spacing: 0.24em;
+    position: relative;
+    transition: color 0.6s ease, opacity 0.6s ease;
+    opacity: 1;
+}
+
+.submenu li.off a {
+    color: #ffffff7e;
+}
+
+/* 헤더 끝============= */
+/* 배너 시작 */
+.banner {
+    width: 1320px;
+    margin: 80px auto;
+    text-align: center;
+    letter-spacing: 0.1em
+}
+
+.eng_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.kr_title {
+    font-size: 26px;
+    -webkit-text-stroke: 0.2px #666;
+}
+
+.banner ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.banner ul li {
+    width: 386px;
+    height: 546px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    /* circle의 기준 */
+}
+
+.title {
+    font-size: 18px;
+    margin: 100px 0 100px;
+    -webkit-text-stroke: 0.4px #666;
+}
+
+.content {
+    display: block;
+    font-size: 14px;
+    padding: 30px 0;
+    transition: transform 0.6s;
+}
+
+.circle {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    z-index: -1;
+}
+
+/* 호버 효과 */
+.content:hover {
+    transform: translateY(10px);
+    transition: transform 0.6s;
+}
+
+@keyframes write_ani {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(10px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}
+
+/* 메인 끝 */
+/* ★★★푸터 시작★★★ */
+#footer_wrap {
+    background-color: #fdfdfd;
+    border-top: 0.1px solid #d9d9d9;
+}
+
+#footer {
+    width: 1320px;
+    height: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 96px;
+    position: relative;
+    /* 글자꾸미기 */
+    font-family: 'pretendard';
+    letter-spacing: 0.05em;
+    color: #777;
+}
+
+#footer h1 .footer_symbol {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    transition: all 0.5s;
+}
+
+/* 로고 애니메이션 */
+.footer_symbol:hover,
+.logo_symbol:hover {
+    animation: logo_ani 5s infinite;
+}
+
+@keyframes logo_ani {
+    0% {
+        transform: rotate(0deg);
+        transition: all 0.5s;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+}
+
+.footer_logo_eng {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    transition: all 0.5s;
+}
+
+.footer_logo_eng:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s;
+}
+
+/* link--------------- */
+#footer_menu_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 210px;
+}
+
+/* 푸터메뉴 */
+.footer_ul {
+    display: flex;
+}
+
+.footer_menu,
+.footer_customer {
+    margin-right: 180px;
+}
+
+.footer_ul>li>ul>li:nth-child(1) {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer_ul>li>ul>li>a {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+/* 푸터링크 */
+.footer_link {
+    display: flex;
+}
+
+.footer_link li a {
+    display: block;
+    font-size: 9px;
+    margin-right: 44px;
+}
+
+.footer_link li a:hover {
+    color: #333;
+}
+
+.hover li a {
+    transition: all 0.4s;
+}
+
+.hover li a:hover {
+    transform: translateX(10px);
+    transition: all 0.3s;
+    color: #333;
+}
+
+/* SNS 아이콘 */
+#footer_under_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon li {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    transition: all 0.4s;
+}
+
+.icon li img {
+    width: 100%;
+}
+
+.icon li:nth-child(1) img {
+    width: 60%;
+}
+
+.icon li:nth-child(2) img {
+    padding-top: 1px;
+}
+
+.icon li:hover {
+    transform: translateY(-10px);
+    transition: all 0.4s;
+}
+
+/* ☆☆☆푸터 끝☆☆☆ */
+/* 커서===================== */
+/* 기본 마우스 커서 숨기기 (모든 클릭 요소 포함) */
+body,
+a,
+button,
+[role="button"],
+.entire-view-btn,
+graphic-node {
+    cursor: none !important;
+}
+
+/* 1. 중앙의 작은 점 */
+.toil-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #333333;
+    /* 토일의 기본 묵직한 텍스트 컬러 */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* 커서가 클릭을 방해하지 않도록 설정 */
+    z-index: 10000;
+    opacity: 1;
+    transition: width 0.2s, height 0.2s, background-color 0.2s, opacity 0.2s;
+}
+
+/* 2. 외곽의 부드러운 링 (포커스 링) */
+.toil-cursor-follower {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(51, 51, 51, 0.25);
+    /* 가느다란 실선 느낌 */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 1;
+    /* 수고로운 느낌을 덜어줄 부드러운 감속 트래킹 프로퍼티 */
+    transition:
+        left 0.08s ease-out,
+        top 0.08s ease-out,
+        width 0.3s ease-out,
+        height 0.3s ease-out,
+        border-color 0.3s,
+        background-color 0.3s,
+        opacity 0.2s;
+}
+
+/* ===================================================
+   HOVER STATE: 버튼, 링크, 지도 섬 노드에 호버했을 때
+   =================================================== */
+
+/* 중앙 점은 작아지면서 맑은 파란색으로 변조 */
+.toil-cursor-dot.is-hover {
+    width: 4px;
+    height: 4px;
+    background-color: #CFEFFFd8;
+}
+
+/* 외곽 링은 크기가 커지며 브랜드 컬러 칠과 선으로 확장 */
+.toil-cursor-follower.is-hover {
+    width: 80px;
+    height: 80px;
+    border-color: #cfefffd8;
+    background-color: rgba(176, 225, 250, 0.12);
+    /* 은은한 파란색 번짐 효과 */
+}
+
+
+/* 커서 사라지기====================== */
+
+/* ===================================================
+   HIDDEN STATE: 특정 구역 호버 시 커서 완전 증발 효과
+   =================================================== */
+
+/* 중심 점과 외곽 팔로워 효과를 동시에 완전히 지웁니다 */
+.toil-cursor-dot.is-hidden,
+.toil-cursor-follower.is-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    /* 기존 box-shadow나 오버레이 잔상까지 강제로 투명화 */
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    /* 스르륵 사라지는 부드러운 타임 인터벌 */
+    transition: all 0.3s ease-out !important;
+}
